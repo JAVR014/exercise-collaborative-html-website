@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <!--hecho por Johan Viloria-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link href="assets/css/contact.css" rel="stylesheet">
     <style>
-        .Contact-body {
-            margin: 0;
-            padding: 0;
+        .Contact_body {
             margin-left: 80px;
-            margin-right: 100px;
+            margin-right: 80px;
         }
-        .container-2 {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: whitesmoke;
-            justify-content: space-between;
-            margin-left: 20px;
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        label {
+            padding: 10px 12px 12px 35%;
+            display: inline-block;
+            
+        }
+        input[type=submit] {
+            background-color: blue;
+            color: white;
+            padding: 12px 20px;
+            width:10%;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            float: right;
+            margin-left: 88.5%;
+        }
+        .container3 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
             padding: 20px;
+            margin-right: 150px;
+            margin-left: 150px;
+            margin-top:30px;
         }
-        
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
-<div class="Contact-body">
+<div class="Contact_body">
     <h4>Contact</h4>
-    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    <div class=container-2>
-    <form>
-    <div class="row mb-3">
-        <label for="InputEmail" class="col-sm-2 col-form-label col-form-label-sm">Your E-mail</label>
-        <div class="col-sm-10">
-        <input type="email" class="form-control form-control-sm" id="InputEmail" placeholder="Your email">
+    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent
+        commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div class="container3">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="InputEmail"><b>Your E-mail</b></label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="InputEmail" name="email" placeholder="Your email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="InputMessage"><b>Your Message</b></label>
+                </div>
+                <div class="col-75">
+                    <textarea id="InputMessage" name="Message" placeholder="Please enter your message here..."
+                        style="height:150px;"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </div>
-    </div>
-      <div class="message">
-        <label for="InputMessage" class="form-label">Your Message</label>
-        <textarea class="form-control" id="InputMessage" placeholder="Please enter your message here..." rows="3"></textarea>
-      </div>
-      <button class="sender" type="submit" value="submit">Submit</button>
-    </div>
-    </form>
-    <!---Example-->
-    <form>
-        <div class="row mb-3">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword3">
-          </div>
-        </div>
 </div>
 </html>
