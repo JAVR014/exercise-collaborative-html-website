@@ -1,3 +1,12 @@
+# Repositorio Grupal
+
+Conformado por:
+Anny Perez -------> 7mo Semestre
+Joelbys Salcedo --> 7mo Semestre
+Johan Viloria ----> 7mo Semestre 
+Yesid ------------> 8vo Semestre
+
+
 # Making a website as a team (Git collaboration)
 
 Practice your skills in Git while developing a typical website.
